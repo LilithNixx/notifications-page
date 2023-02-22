@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: hsl(210, 60%, 98%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px 0;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 2px 2px 2px hsl(219, 14%, 63%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  color: hsl(219, 12%, 42%);
+}
+.container p strong {
+  color: hsl(224, 21%, 14%);
+}
+.container p .group {
+  color: hsl(219, 85%, 26%);
+}
+.container .time {
+  color: hsl(219, 14%, 63%);
+}
+.container .small-header {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .small-header .notifications {
+  font-weight: 800;
+  font-size: 1.2em;
+}
+.container .small-header .notifications .amount {
+  background-color: hsl(219, 85%, 26%);
+  color: hsl(0, 0%, 100%);
+  font-size: 0.8em;
+  padding: 1px 8px;
+  margin-left: 5px;
+  border-radius: 6px;
+}
+@media (max-width: 400px) {
+  .container .small-header .notifications {
+    font-size: 14px;
+  }
+}
+.container .small-header .marked-read {
+  color: hsl(219, 14%, 63%);
+}
+@media (max-width: 400px) {
+  .container .small-header .marked-read {
+    font-size: 12px;
+  }
+}
+.container .small-header .marked-read:hover {
+  color: hsl(1, 90%, 64%);
+  cursor: pointer;
+}
+.container main .card {
+  width: 90%;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 10px;
+}
+.container main .card .avatar, .container main .card .your-pic img {
+  width: 60px;
+}
+@media (max-width: 400px) {
+  .container main .card .avatar, .container main .card .your-pic img {
+    width: 50px;
+  }
+}
+.container main .card.kim {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container main .card.kim .avatar-info {
+  display: flex;
+  align-items: center;
+}
+.container main .card .info {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.container main .card .info .text, .container main .card .info .time {
+  font-size: 14px;
+}
+@media (max-width: 400px) {
+  .container main .card .info .text, .container main .card .info .time {
+    font-size: 12px;
+  }
+}
+.container main .card .info .text {
+  margin-bottom: 4px;
+}
+.container main .card .bi {
+  font-size: 25px;
+  color: hsl(1, 90%, 64%);
+  vertical-align: middle;
+}
+.container main .card:hover {
+  cursor: pointer;
+}
+.container main .sub-paragraph {
+  font-size: 14px;
+  margin-left: 70px;
+  border: 1px solid hsl(205, 33%, 90%);
+  padding: 15px;
+}
+@media (max-width: 400px) {
+  .container main .sub-paragraph {
+    font-size: 12px;
+    margin-top: 0;
+  }
+}
+.container main .unseen {
+  background-color: hsl(211, 68%, 94%);
+}
+@media (max-width: 700px) {
+  .container {
+    margin: 0;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

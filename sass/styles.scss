@@ -1,0 +1,197 @@
+$Red: hsl(1, 90%, 64%);
+$Blue: hsl(219, 85%, 26%);
+$White: hsl(0, 0%, 100%);
+$Very-light-grayish-blue: hsl(210, 60%, 98%);
+$Light-grayish-blue1: hsl(211, 68%, 94%);
+$Light-grayish-blue2: hsl(205, 33%, 90%);
+$Grayish-blue: hsl(219, 14%, 63%);
+$Dark-grayish-blue: hsl(219, 12%, 42%);
+$Very-dark-blue: hsl(224, 21%, 14%);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: $Very-light-grayish-blue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 700px){
+        font-size: 14px;
+    }
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px 0;
+
+    background-color: $White;
+    box-shadow: 0 2px 2px 2px $Grayish-blue;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        color: $Dark-grayish-blue;
+
+        strong {
+            color: $Very-dark-blue;
+        }
+
+        .group {
+            color: $Blue;
+        }
+    }
+
+    .time {
+        color: $Grayish-blue;
+    }
+
+    .small-header {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+
+        display: flex;
+        justify-content: space-between;
+
+        .notifications {
+            font-weight: 800;
+            font-size: 1.2em;
+
+            .amount {
+                background-color: $Blue;
+                color: $White;
+                font-size: 0.8em;
+
+                padding: 1px 8px;
+                margin-left: 5px;
+                border-radius: 6px;
+            }
+
+            @media (max-width: 400px) {
+                font-size: 14px;
+            }
+        }
+
+        .marked-read {
+            color: $Grayish-blue;
+
+            @media (max-width: 400px) {
+                font-size: 12px;
+            }
+        }
+
+        .marked-read:hover {
+            color: $Red;
+            cursor: pointer;
+        }
+    }
+
+    main {
+        .card {
+            width: 90%;
+            padding: 20px;
+            margin: 20px;
+
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            border-radius: 10px;
+
+            .avatar, .your-pic img {
+                width: 60px;
+
+                @media (max-width: 400px) {
+                    width: 50px;
+                }
+            }
+
+            &.kim {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .avatar-info {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .info {
+                padding-left: 20px;
+
+                display: flex;
+                flex-direction: column;
+
+                .text, .time {
+                    font-size: 14px;
+
+                    @media (max-width: 400px) {
+                        font-size: 12px;
+                    }
+                }
+
+                .text {
+                    margin-bottom: 4px;
+                }
+
+               
+            }
+
+            .bi {
+                font-size: 25px;
+                color: $Red;
+
+                vertical-align:middle;
+            }
+        }
+
+        .card:hover {
+            cursor: pointer;
+        }
+
+        .sub-paragraph {
+            font-size: 14px;
+            margin-left: 70px;
+            border: 1px solid $Light-grayish-blue2;
+            padding: 15px;
+
+            @media (max-width: 400px) {
+                font-size: 12px;
+                margin-top: 0;
+            }
+        }
+
+        .unseen {
+            background-color: $Light-grayish-blue1;
+        }
+    }
+
+    @media (max-width: 700px){
+        margin: 0;
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+
+    a {
+        color: hsl(228, 45%, 44%); 
+        text-decoration: none;
+    }
+}
+ 
